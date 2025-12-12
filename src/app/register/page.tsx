@@ -13,12 +13,7 @@ export default function Register() {
   const [loading, setLoading] = useState(false);
 
   const slots = [
-    { id: 'slot-1', label: '10:00 AM - 10:30 AM', available: true },
-    { id: 'slot-2', label: '10:30 AM - 11:00 AM', available: true },
-    { id: 'slot-3', label: '11:00 AM - 11:30 AM', available: false },
-    { id: 'slot-4', label: '02:00 PM - 02:30 PM', available: true },
-    { id: 'slot-5', label: '02:30 PM - 03:00 PM', available: false },
-    { id: 'slot-6', label: '03:00 PM - 03:30 PM', available: true },
+    { id: 'slot-1', label: 'Time slots will be announced soon.', available: false },
   ];
 
   const handleSubmit = async (data: FormData & { registrationId: string }) => {
