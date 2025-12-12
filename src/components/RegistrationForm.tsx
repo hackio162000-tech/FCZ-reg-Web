@@ -40,7 +40,6 @@ export default function RegistrationForm({ onSubmit, slots, loading = false }: R
     if (!formData.captainName.trim()) newErrors.captainName = 'Captain name is required';
     if (!isValidPhone(formData.phoneNumber)) newErrors.phoneNumber = 'Valid 10-digit phone number required';
     if (!isValidEmail(formData.email)) newErrors.email = 'Valid email is required';
-    if (!formData.selectedSlot) newErrors.selectedSlot = 'Please select a time slot';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -166,7 +165,7 @@ export default function RegistrationForm({ onSubmit, slots, loading = false }: R
 
       {/* Time Slot Selection */}
       <div>
-        <label className="block text-yellow-400 font-semibold mb-3">Select Time Slot *</label>
+        <label className="block text-yellow-400 font-semibold mb-3">Select Time Slot (Coming Soon)</label>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {slots.map((slot) => (
             <button
